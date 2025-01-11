@@ -21,7 +21,7 @@ let version = "0.0.1"
 for (const file of files) {
   const match = file.match(/litestream-v([.\d]+)-/)
   if (match) {
-    // version = match[1] *TODO* uncomment once working
+    version = match[1]
     break
   }
 }
