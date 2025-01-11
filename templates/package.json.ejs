@@ -1,0 +1,23 @@
+{
+  "name": "@flydotio/litestream-<%= os %>-<%= arch %>",
+  "version": "<%= version %>",
+  "description": "The <%= os %> <%= arch %> binary for litestream.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fly-apps/litestream-npm.git"
+  },
+  "license": "MIT",
+  "preferUnplugged": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "os": [
+    "<%= os %>"
+  ],
+  "cpu": [
+    "<%= arch %>"
+  ]
+}

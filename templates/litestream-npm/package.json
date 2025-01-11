@@ -1,0 +1,35 @@
+{
+  "name": "@flydotio/litestream",
+  "version": "0.0.1",
+  "description": "Make Litestream available via npm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fly-apps/litestream-npm.git"
+  },
+  "main": "./index.js",
+  "bin": {
+    "atc": "index.js"
+  },
+  "type": "module",
+  "author": "Sam Ruby",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubys/litestream-npm.git"
+  },
+  "optionalDependencies": {
+    "@flydotio/litestream-darwin-arm64": "0.0.1",
+    "@flydotio/litestream-darwin-x64": "0.0.1",
+    "@flydotio/litestream-linux-arm64": "0.0.1",
+    "@flydotio/litestream-linux-x64": "0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js"
+  ]
+}

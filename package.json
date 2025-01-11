@@ -1,0 +1,14 @@
+{
+  "name": "litestream-npm",
+  "version": "0.0.1",
+  "description": "Makes Litestream installable via npm",
+  "scripts": {
+    "package": "node package.js"
+  },
+  "type": "module",
+  "author": "Sam Ruby",
+  "license": "MIT",
+  "devDependencies": {
+    "ejs": "^3.1.10"
+  }
+}
