@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rubys/litestream-npm.git"
+    "url": "git+https://github.com/fly-apps/litestream-npm.git"
   },
   "optionalDependencies": {
     "@flydotio/litestream-darwin-arm64": "0.0.1",

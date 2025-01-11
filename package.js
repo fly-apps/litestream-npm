@@ -17,11 +17,11 @@ const template = fs.readFileSync('templates/package.json.ejs', 'utf8')
 fs.mkdirSync('tmp', { recursive: true })
 execSync('gh release download -p "*" -R benbjohnson/litestream --clobber', { cwd: 'tmp', stdio: 'inherit' })
 const files = fs.readdirSync('tmp')
-let version = "0.0.1"
+let version = "1.0.0"
 for (const file of files) {
   const match = file.match(/litestream-v([.\d]+)-/)
   if (match) {
-    version = match[1]
+    // version = match[1]
     break
   }
 }

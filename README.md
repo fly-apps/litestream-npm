@@ -43,7 +43,7 @@ Prepare packages for release:
 npm run package
 ```
 
-Current version is 0.3.13.  It includes binaries for litestream v0.3.13.
+Current version is 1.0.0.  It includes binaries for litestream v0.3.13.
 
 ## License
 
