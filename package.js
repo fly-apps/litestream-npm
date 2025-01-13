@@ -17,7 +17,7 @@ const template = fs.readFileSync('templates/package.json.ejs', 'utf8')
 fs.mkdirSync('tmp', { recursive: true })
 execSync('gh release download -p "*" -R benbjohnson/litestream --clobber', { cwd: 'tmp', stdio: 'inherit' })
 const files = fs.readdirSync('tmp')
-let version = "1.0.0"
+let version = "1.0.1"
 for (const file of files) {
   const match = file.match(/litestream-v([.\d]+)-/)
   if (match) {
@@ -33,7 +33,7 @@ for (const os in OS) {
     const path = `pkg/litestream-${platform}`
     fs.mkdirSync(path, { recursive: true })
 
-    const options = { os, arch, version }
+    const options = { os: OS[os], arch: ARCH[arch], version }
     const rendered = ejs.render(template, options)
     fs.writeFileSync(`${path}/package.json`, rendered)
 

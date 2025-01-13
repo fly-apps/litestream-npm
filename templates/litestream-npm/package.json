@@ -8,7 +8,7 @@
   },
   "main": "./index.js",
   "bin": {
-    "atc": "index.js"
+    "litestream": "index.js"
   },
   "type": "module",
   "author": "Sam Ruby",
